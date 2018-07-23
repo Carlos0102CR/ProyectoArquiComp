@@ -1,0 +1,7 @@
+Funcionamiento normal:
+
+a || b || c || (a && b) = ~a nand ~b nand ~c
+
+Funcionamiento anormal:
+
+(~a && ~b && ~c) || (a && b && c) || (a && ~b && c) || (~a && b && c) = (a nand c) nand (~a nand ~b nand ~c) nand (b nand c) 
